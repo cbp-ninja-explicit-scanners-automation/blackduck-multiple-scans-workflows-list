@@ -21,7 +21,7 @@ jobs:
         with:
             repo: cbp-automation-ninja/blackduck-scan-kubernetes-libraries-dependencies
       - name: black duck hybrid plugin scan
-        uses: cloudbees-io/blackduck-sca-scan-dependency@apr
+        uses: cloudbees-io/blackduck-sca-scan-dependency@v2
         with:
           server-url: https://blackduck.saas-qa.beescloud.com
           api-token: ${{ secrets.BD_API_TOKEN }}
